@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.canvas {
+  width: 100%;
+  border: 1px solid rgba(180, 232, 255, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(0deg, rgba(110, 200, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(110, 200, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, #0d2139 0%, #0a172a 100%);
+  background-size: 18px 18px, 18px 18px, 100% 100%;
+}
+
+.title {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(197, 236, 255, 0.9);
+}
+
+.desc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: rgba(216, 236, 248, 0.75);
+}
+
+.specGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.specItem {
+  border: 1px solid rgba(170, 220, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(8, 22, 36, 0.65);
+  padding: 6px 8px;
+}
+
+.specLabel {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: rgba(180, 220, 242, 0.72);
+}
+
+.specValue {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-family: 'SF Mono', 'Monaco', monospace;
+  color: #d8f7ff;
+}

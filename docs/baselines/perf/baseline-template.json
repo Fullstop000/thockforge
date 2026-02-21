@@ -1,0 +1,13 @@
+{
+  "scenario": "60-percent-default-mid-view",
+  "quality": "balanced",
+  "deviceTier": "mid",
+  "metrics": {
+    "fps": 60,
+    "drawCalls": 0,
+    "triangles": 0,
+    "cpuFrameMs": 0,
+    "gpuFrameMs": 0
+  },
+  "notes": "Fill with measured values before merge"
+}

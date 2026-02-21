@@ -1,0 +1,88 @@
+.dock {
+  width: 380px;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid rgba(132, 198, 239, 0.2);
+  background: linear-gradient(180deg, #0f1d33 0%, #0a1427 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 16px 18px 14px;
+  border-bottom: 1px solid rgba(167, 219, 255, 0.16);
+  background: rgba(8, 18, 32, 0.72);
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #d8f4ff;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(205, 236, 255, 0.72);
+}
+
+.zoneTag {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(154, 222, 255, 0.35);
+  background: rgba(96, 178, 219, 0.12);
+  color: #c4f0ff;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px 12px 18px;
+}
+
+.section {
+  border: 1px solid rgba(167, 219, 255, 0.16);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(7, 18, 31, 0.48);
+}
+
+.sectionHeader {
+  padding: 10px 12px 8px;
+  border-bottom: 1px solid rgba(167, 219, 255, 0.14);
+  background: rgba(8, 18, 32, 0.72);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(197, 236, 255, 0.9);
+}
+
+.body {
+  padding: 12px;
+}
+
+@media (max-width: 1360px) {
+  .dock {
+    width: 340px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .dock {
+    display: none;
+  }
+}

@@ -1,0 +1,73 @@
+.overlay {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 30;
+  pointer-events: none;
+  min-width: 260px;
+  max-width: 380px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(8, 10, 18, 0.82);
+  backdrop-filter: blur(8px);
+  color: #f5f7fa;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.overlayHidden {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0a1115;
+  background: linear-gradient(120deg, #19f28f, #3be5f2);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.line {
+  margin-top: 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d6deea;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.effect {
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.72);
+}
